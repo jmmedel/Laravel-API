@@ -41,7 +41,7 @@ class ArticleController extends Controller
         if($article->save()) {
             return new ArticleResource($article);
         }
-        
+
     }
 
     /**
@@ -72,6 +72,6 @@ class ArticleController extends Controller
 
         if($article->delete()) {
             return new ArticleResource($article);
-        }    
+        }
     }
 }
